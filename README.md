@@ -46,8 +46,8 @@ This project implements a distributed URL shortener service built in GoLang with
     - kubectl apply -f mongo-deployment.yaml
     - kubectl apply -f api-deployment.yaml
     - kubectl apply -f nginx-deployment.yaml
-4- then expose the nginx service to be able to access the api through this command : kubectl port-forward deployment/nginx 8080:80
-5- then you can access the api through the following: 
+4. then expose the nginx service to be able to access the api through this command : kubectl port-forward deployment/nginx 8080:80
+5. then you can access the api through the following: 
     - POST http://localhost:8080/shorten with a body for example like this : {"url":"https://www.google.com"}
     - GET http://localhost:8080/{shortID} where shortID is the short id that you got from the previous step
     - you can also try to access the analytics through the following : GET http://localhost:8080/analytics
