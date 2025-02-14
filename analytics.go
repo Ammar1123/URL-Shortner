@@ -1,4 +1,3 @@
-// analytics.go
 package main
 
 import (

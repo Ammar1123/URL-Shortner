@@ -1,4 +1,3 @@
-// rate_limiter.go
 package main
 
 import (

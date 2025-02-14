@@ -1,4 +1,3 @@
-// main.go
 package main
 
 import (
@@ -57,7 +56,7 @@ func main() {
 	initMongo()
 
 	// Initialize the analytics channel and start the worker goroutine.
-	analyticsChan = make(chan AnalyticsEvent, 100) // Buffer of 100 events.
+	analyticsChan = make(chan AnalyticsEvent, 100)
 	go analyticsWorker()
 
 	// Set up the Gin router.

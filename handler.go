@@ -1,4 +1,3 @@
-// handler.go
 package main
 
 import (
@@ -57,7 +56,7 @@ func shortenURLHandler(c *gin.Context) {
 	}
 
 	// Construct the short URL (adjust the domain as necessary).
-	shortURL := "http://example.com/" + shortID
+	shortURL := "http://urlShortner.com/" + shortID
 	c.JSON(http.StatusOK, gin.H{"short_url": shortURL})
 }
 

@@ -1,5 +1,3 @@
-# Dockerfile
-
 # Build stage using Golang.
 FROM golang:1.22 AS builder
 
